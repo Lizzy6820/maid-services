@@ -3,6 +3,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import React, {useState,useEffect} from 'react';
 import {images} from '../constants';
 import './Data.css'
+import {Link} from 'react-router-dom';
 
 
 const maidData =[
@@ -103,6 +104,15 @@ const Data = () => {
           Female
         </div>
       </div>
+
+      <br/>
+                <Button variant='contained'size="large"sx={{backgroundColor:'#d4a437', fontWeight:'500',marginLeft:'5px',marginBottom:'20px',
+                '@media screen and (max-width:900px)': {
+                  marginLeft: '1px'}}}
+                component={Link} to='/'
+                >
+                    Back to home
+                   </Button>
 
       <div id="maid-list">
         {filteredList.map((item, index) => (

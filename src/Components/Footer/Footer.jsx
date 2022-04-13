@@ -17,17 +17,18 @@ const Container = styled.div`
     flex-direction: column;
     padding: 20px;
     margin-left: 50px;
-    ${mobile({marginLeft:'30px', padding:'20px 2px'})}
+    ${mobile({marginLeft:'10rem',  width:'55%',padding:'10px'})}
   `;
   
 
   const Desc = styled.p`
     margin: 20px 0px;
+    ${mobile({flexDirection:'column', width:'100%'})}
   `;
   
   const SocialContainer = styled.div`
     display: flex;
-    ${mobile({flexDirection:'column'})}
+    ${mobile({marginLeft:'8rem'})}
   
   `;
   
@@ -53,8 +54,13 @@ const Container = styled.div`
   
   const Title = styled.h3`
     margin-bottom: 30px;
+    ${mobile({marginLeft:'8rem'})}
   `;
+  const Title1 = styled.h3`
+    margin-bottom: 30px;
   
+  
+  `;
   const List = styled.ul`
     margin: 0;
     padding: 0;
@@ -80,7 +86,7 @@ const Footer = () => {
   return (
     <Container id="contact">
     <Left>
-    <Title>About Us</Title>
+    <Title1>About Us</Title1>
     <img src={logo} alt="Home Care Ug" height="30%" width="20%"  />
       <Desc>
        Our mission is to provide professional helpers who will create an environment of cleanliness, organisation and care in your home.
